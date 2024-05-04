@@ -1,0 +1,136 @@
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Behind the content */
+    background-size: cover;
+  }
+  
+  /* Styles for other content so it can be visible over the video */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white; /* Ensuring text is visible on a potentially dark video background */
+    top: 50%; /* Centering content vertically */
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+
+/* Body Styles */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    background-color: #fff;
+    color: #ffffff; /* Default text color */
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'poppins',sans-serif;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+/* Container Styles */
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 1rem; /* Add padding to the container */
+    max-width: 960px; /* Set maximum width */
+}
+
+/* Navigation Styles */
+nav {
+    padding-top: 1.25rem; /* Adjust top padding */
+    padding-bottom: 1.25rem; /* Adjust bottom padding */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 1rem; /* Add right margin between list items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Default link color */
+}
+
+a:hover {
+    color: #000; /* Change link color on hover */
+}
+
+/* Header Styles */
+.text-center {
+    text-align: center; /* Center align text */
+    margin-top: 2.5rem; /* Adjust top margin */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Set font size */
+    margin-top: 1rem; /* Adjust top margin */
+}
+
+/* Button Styles */
+.bn31 {
+    background-image: linear-gradient(to right, #001f85 0%, #0ac6f5 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #07b3ca;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  
+  .bn31:hover {
+    color: #fff;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: #0e0e10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }
+/* Image Styles */
+img {
+    width: 9rem; /* Set image width */
+    height: 9rem; /* Set image height */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+    margin-top: 5rem
+    
+}
+
+/* Additional Styles for Feature List */
+.features {
+    margin-top: 2rem; /* Adjust top margin */
+}
+
+.features li {
+    margin-bottom: 0.5rem; /* Adjust bottom margin between list items */
+}
